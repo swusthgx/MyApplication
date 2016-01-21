@@ -1,1 +1,1 @@
-include ':app', ':GestureTest'
+include ':app', ':GestureTest', ':SensorTest', ':Application'

@@ -1,11 +1,13 @@
 package com.malata.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Menu;
@@ -13,7 +15,10 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
-
+/*
+*
+*
+* */
 public class MainActivity extends Activity implements GestureDetector.OnGestureListener {
 
     private GestureDetector detector;
@@ -47,6 +52,10 @@ public class MainActivity extends Activity implements GestureDetector.OnGestureL
     @Override
     public boolean onDown(MotionEvent motionEvent) {
         Log.i("studio","onDown");
+        Intent intent=new Intent();
+        intent.setAction("3");
+        sendBroadcast
+        sendBroadcastAsUser(intent, new UserHandle(UserHandle.);
         return false;
     }
 
